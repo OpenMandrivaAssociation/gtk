@@ -95,7 +95,7 @@ Summary:	Development tools for GTK+ (GIMP ToolKit) applications
 Group:		Development/GNOME and GTK+
 Requires:	%{libname} = %{version}
 Obsoletes:	gtk-devel
-Requires(post,preun):	/sbin/install-info
+Requires(post,preun):	info-install
 Provides:	gtk-devel = %{version}-%{release}
 Provides:	gtk+-devel = %{version}-%{release}
 Provides:	libgtk+-devel = %{version}-%{release}
