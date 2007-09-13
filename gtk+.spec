@@ -1,6 +1,6 @@
 %define name	gtk+
 %define version	1.2.10
-%define release	%mkrel 46
+%define release	%mkrel 47
 
 %define major    	1.2
 %define libname  	%mklibname %{name} %{major}
@@ -85,6 +85,7 @@ Summary:	Main library for gtk+
 Group:		System/Libraries
 Provides:	gtk+ = %{version}-%{release}
 Obsoletes:	gtk+
+Suggests:	galaxy-gtk12
 
 %description -n	%{libname}
 This package contains the library needed to run programs dynamically
@@ -157,6 +158,12 @@ make check
 rm -rf $RPM_BUILD_ROOT
 
 %makeinstall_std
+
+# create a default theme file
+cat << EOF > $RPM_BUILD_ROOT%{_sysconfdir}/gtk/gtkrc
+include "/usr/share/themes/Galaxy/gtk/gtkrc"
+EOF
+
 
 %multiarch_binaries $RPM_BUILD_ROOT%{_bindir}/*
 
