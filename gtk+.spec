@@ -68,7 +68,7 @@ Patch28:	gtk+-1.2.10-argb.patch
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.gtk.org
-BuildRequires:	XFree86-devel
+BuildRequires:	X11-devel
 BuildRequires:	autoconf2.1
 BuildRequires:	libtool
 BuildRequires:	glib-devel >= %{version}
