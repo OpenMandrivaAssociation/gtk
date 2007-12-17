@@ -66,7 +66,6 @@ Patch27:	gtk+-1.2.10-fix-underquoted-calls.patch
 # (fc) 1.2.10-45mdv ugly hack to skip argb visuals
 Patch28:	gtk+-1.2.10-argb.patch
 
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.gtk.org
 BuildRequires:	X11-devel
 BuildRequires:	autoconf2.1
