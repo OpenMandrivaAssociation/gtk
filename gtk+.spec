@@ -1,6 +1,6 @@
 %define name	gtk+
 %define version	1.2.10
-%define release	%mkrel 48
+%define release	%mkrel 49
 
 %define major    	1.2
 %define libname  	%mklibname %{name} %{major}
@@ -65,6 +65,8 @@ Patch26:	gtk+-1.2.10-defaultcolor.patch
 Patch27:	gtk+-1.2.10-fix-underquoted-calls.patch
 # (fc) 1.2.10-45mdv ugly hack to skip argb visuals
 Patch28:	gtk+-1.2.10-argb.patch
+# (from fedora)
+Patch29:	gtk+-1.2.10-gtkgdkdep.patch
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.gtk.org
@@ -140,6 +142,7 @@ GTK+ 2.
 %patch26 -p1 -b .defaultcolor
 %patch27 -p1 -b .underquoted
 %patch28 -p1 -b .argb
+%patch29 -p1 -b .gdkdep
 
 # vi.po is not encoded in utf-8
 bzcat %{SOURCE1} > po/vi.po
