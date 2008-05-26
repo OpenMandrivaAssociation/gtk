@@ -72,6 +72,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.gtk.org
 BuildRequires:	X11-devel
 BuildRequires:	autoconf2.1
+BuildRequires:	automake1.4
 BuildRequires:	libtool
 BuildRequires:	glib-devel >= %{version}
 
@@ -147,7 +148,7 @@ GTK+ 2.
 # vi.po is not encoded in utf-8
 bzcat %{SOURCE1} > po/vi.po
 
-# needed by patch 3
+# needed by patch 3, 29
 # it doesn't work with 2.5. I tested. -AdamW 2007/07
 autoreconf-2.13
 
