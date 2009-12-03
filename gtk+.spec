@@ -148,11 +148,13 @@ GTK+ 2.
 # vi.po is not encoded in utf-8
 bzcat %{SOURCE1} > po/vi.po
 
+libtoolize --install --force
 # needed by patch 3, 29
 # it doesn't work with 2.5. I tested. -AdamW 2007/07
 autoreconf-2.13
 
 %build
+%define Werror_cflags %nil
 %configure  --with-xinput=xfree --with-native-locale
 %make LIBTOOL=%{_bindir}/libtool
 
@@ -161,7 +163,7 @@ make check
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%makeinstall_std
+%makeinstall_std LIBTOOL=%{_bindir}/libtool
 
 # create a default theme file
 cat << EOF > $RPM_BUILD_ROOT%{_sysconfdir}/gtk/gtkrc
