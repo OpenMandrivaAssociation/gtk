@@ -67,8 +67,6 @@ Patch27:	gtk+-1.2.10-fix-underquoted-calls.patch
 Patch28:	gtk+-1.2.10-argb.patch
 # (from fedora)
 Patch29:	gtk+-1.2.10-gtkgdkdep.patch
-# (from git master)
-Patch30:	gtk-2.19.2-fix-sylpheed-crash.patch
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.gtk.org
@@ -146,7 +144,6 @@ GTK+ 2.
 %patch27 -p1 -b .underquoted
 %patch28 -p1 -b .argb
 %patch29 -p1 -b .gdkdep
-%patch30 -p1 -b .sylpheedcrash
 
 # vi.po is not encoded in utf-8
 bzcat %{SOURCE1} > po/vi.po
