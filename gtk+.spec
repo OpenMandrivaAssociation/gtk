@@ -178,10 +178,6 @@ EOF
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%if %mdkversion < 200900
-%post -n %{libname} -p /sbin/ldconfig
-%endif
-
 %post -n %{develname}
 %_install_info gtk.info
 %_install_info gdk.info
@@ -195,10 +191,6 @@ if [ "$1" = "0" ]; then
 	%{__install_info} \
 	%{_infodir}/gtk.info%{_extension} --dir=%{_infodir}/dir --remove
 fi
-
-%if %mdkversion < 200900
-%postun -n %{libname} -p /sbin/ldconfig
-%endif
 
 %files -n %{libname} -f %{name}.lang
 %defattr(-, root, root)
@@ -218,5 +210,6 @@ fi
 %{_includedir}/*
 %{_datadir}/aclocal/*
 %multiarch %{multiarch_bindir}/*
+
 %{_bindir}/*
 %{_libdir}/pkgconfig/*
