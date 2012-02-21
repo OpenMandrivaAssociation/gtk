@@ -1,6 +1,6 @@
 %define name	gtk+
 %define version	1.2.10
-%define release	%mkrel 52
+%define release	%mkrel 53
 
 %define major    	1.2
 %define libname  	%mklibname %{name} %{major}
