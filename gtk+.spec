@@ -211,5 +211,5 @@ fi
 %{_datadir}/aclocal/*
 %multiarch %{multiarch_bindir}/*
 
-%{_bindir}/*
+%{_bindir}/gtk-config
 %{_libdir}/pkgconfig/*
