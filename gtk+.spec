@@ -1,19 +1,15 @@
-%define name	gtk+
-%define version	1.2.10
-%define release	%mkrel 53
-
-%define major    	1.2
-%define libname  	%mklibname %{name} %{major}
+%define major		1.2
+%define libname		%mklibname %{name} %{major}
 %define develname	%mklibname %{name} -d
 
 Summary:	The GIMP ToolKit (GTK+), a library for creating GUIs for X
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		gtk+
+Version:	1.2.10
+Release:	54
 License:	LGPL
 Group:		System/Libraries
 Source0:	ftp://ftp.gimp.org/pub/gtk/v1.2/gtk+-%{version}.tar.bz2
-Source1:	gtk+-1.2.10-vi.po.bz2	
+Source1:	gtk+-1.2.10-vi.po.bz2
 # (fc) 1.2.10-2mdk ximian patch changing drawing when no shadow is set for menubar
 Patch2:		gtkmenubar-noborder.patch
 # (pablo) better gtkrc definitions
@@ -68,7 +64,6 @@ Patch28:	gtk+-1.2.10-argb.patch
 # (from fedora)
 Patch29:	gtk+-1.2.10-gtkgdkdep.patch
 
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.gtk.org
 BuildRequires:	X11-devel
 BuildRequires:	autoconf2.1
@@ -99,7 +94,6 @@ Summary:	Development tools for GTK+ (GIMP ToolKit) applications
 Group:		Development/GNOME and GTK+
 Requires:	%{libname} = %{version}
 Obsoletes:	gtk-devel
-Requires(post,preun):	info-install
 Provides:	gtk-devel = %{version}-%{release}
 Provides:	gtk+-devel = %{version}-%{release}
 Provides:	libgtk+-devel = %{version}-%{release}
@@ -161,39 +155,21 @@ autoreconf-2.13
 make check
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %makeinstall_std LIBTOOL=%{_bindir}/libtool
 
 # create a default theme file
-cat << EOF > $RPM_BUILD_ROOT%{_sysconfdir}/gtk/gtkrc
+cat << EOF > %{buildroot}%{_sysconfdir}/gtk/gtkrc
 include "/usr/share/themes/Galaxy/gtk/gtkrc"
 EOF
 
 
-%multiarch_binaries $RPM_BUILD_ROOT%{_bindir}/*
+%multiarch_binaries %{buildroot}%{_bindir}/*
 
-%{find_lang} %{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
-
-%post -n %{develname}
-%_install_info gtk.info
-%_install_info gdk.info
-
-%preun -n %{develname}
-if [ "$1" = "0" ]; then
-	%{__install_info} \
-	%{_infodir}/gdk.info%{_extension} --dir=%{_infodir}/dir --remove
-fi
-if [ "$1" = "0" ]; then
-	%{__install_info} \
-	%{_infodir}/gtk.info%{_extension} --dir=%{_infodir}/dir --remove
-fi
+%find_lang %{name}
 
 %files -n %{libname} -f %{name}.lang
-%defattr(-, root, root)
 %doc INSTALL ABOUT-NLS
 %{_libdir}/lib*.so.*
 %{_datadir}/themes
@@ -201,7 +177,6 @@ fi
 %config(noreplace) %{_sysconfdir}/gtk/*
 
 %files -n %{develname}
-%defattr(-, root, root)
 %doc docs/*.txt AUTHORS ChangeLog NEWS* README* TODO docs/html
 %{_libdir}/lib*.so
 %{_libdir}/*a
