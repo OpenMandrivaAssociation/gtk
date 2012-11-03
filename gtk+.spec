@@ -149,7 +149,7 @@ autoreconf-2.13
 
 %build
 %define Werror_cflags %nil
-%configure  --with-xinput=xfree --with-native-locale --disable-static
+%configure  --with-xinput=xfree --with-native-locale
 %make LIBTOOL=%{_bindir}/libtool
 
 %check
@@ -177,9 +177,11 @@ EOF
 %files -n %{develname}
 %doc docs/*.txt AUTHORS ChangeLog NEWS* README* TODO docs/html
 %{_libdir}/lib*.so
+%{_libdir}/*a
 %{_mandir}/man1/*
 %{_infodir}/g?k.info*
 %{_includedir}/*
 %{_datadir}/aclocal/*
 %multiarch %{multiarch_bindir}/*
+%{_bindir}/gtk-config
 %{_libdir}/pkgconfig/*
