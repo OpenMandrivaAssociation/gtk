@@ -1,11 +1,11 @@
-%define major		1.2
-%define libname		%mklibname %{name} %{major}
-%define develname	%mklibname %{name} -d
+%define major 1.2
+%define libname %mklibname %{name} %{major}
+%define develname %mklibname %{name} -d
 
 Summary:	The GIMP ToolKit (GTK+), a library for creating GUIs for X
 Name:		gtk+
 Version:	1.2.10
-Release:	54
+Release:	55
 License:	LGPL
 Group:		System/Libraries
 Source0:	ftp://ftp.gimp.org/pub/gtk/v1.2/gtk+-%{version}.tar.bz2
@@ -78,27 +78,27 @@ written for the GIMP (GNU Image Manipulation Program) image processing
 program, but is now used by several other programs as well. This is GTK+ 
 1.2, a legacy version. The current version is GTK+ 2.
 
-%package -n	%{libname}
+%package -n %{libname}
 Summary:	Main library for gtk+
 Group:		System/Libraries
 Provides:	gtk+ = %{version}-%{release}
-Obsoletes:	gtk+
+Obsoletes:	gtk+ < %{version}-%{release}
 Suggests:	galaxy-gtk12
 
 %description -n	%{libname}
 This package contains the library needed to run programs dynamically
 linked with gtk+.
 
-%package -n	%{develname}
+%package -n %{develname}
 Summary:	Development tools for GTK+ (GIMP ToolKit) applications
 Group:		Development/GNOME and GTK+
 Requires:	%{libname} = %{version}
-Obsoletes:	gtk-devel
+Obsoletes:	gtk-devel < %{version}-%{release}
 Provides:	gtk-devel = %{version}-%{release}
 Provides:	gtk+-devel = %{version}-%{release}
 Provides:	libgtk+-devel = %{version}-%{release}
 Provides:	gtk+%{major}-devel = %{version}-%{release}
-Obsoletes:	gtk+-devel
+Obsoletes:	gtk+-devel < %{version}-%{release}
 Obsoletes:	%{mklibname gtk+ 1.2 -d}
 
 %description -n	%{develname}
@@ -149,21 +149,19 @@ autoreconf-2.13
 
 %build
 %define Werror_cflags %nil
-%configure  --with-xinput=xfree --with-native-locale
+%configure  --with-xinput=xfree --with-native-locale --disable-static
 %make LIBTOOL=%{_bindir}/libtool
 
+%check
 make check
 
 %install
-rm -rf %{buildroot}
-
 %makeinstall_std LIBTOOL=%{_bindir}/libtool
 
 # create a default theme file
 cat << EOF > %{buildroot}%{_sysconfdir}/gtk/gtkrc
 include "/usr/share/themes/Galaxy/gtk/gtkrc"
 EOF
-
 
 %multiarch_binaries %{buildroot}%{_bindir}/*
 
@@ -179,12 +177,10 @@ EOF
 %files -n %{develname}
 %doc docs/*.txt AUTHORS ChangeLog NEWS* README* TODO docs/html
 %{_libdir}/lib*.so
-%{_libdir}/*a
 %{_mandir}/man1/*
 %{_infodir}/g?k.info*
 %{_includedir}/*
 %{_datadir}/aclocal/*
 %multiarch %{multiarch_bindir}/*
-
 %{_bindir}/gtk-config
 %{_libdir}/pkgconfig/*
