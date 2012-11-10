@@ -1,0 +1,400 @@
+diff -p -up gtk+-1.2.10/gtk/gtkrc.am_ET.utf8.orig gtk+-1.2.10/gtk/gtkrc.am_ET.utf8
+--- gtk+-1.2.10/gtk/gtkrc.am_ET.utf8.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.am_ET.utf8	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,7 @@
++style "gtk-default" {
++       fontset = "-*-gf zemen unicode-medium-r-normal--14-*-*-*-p-*-iso10646-1,\
++       		-*-clearlyu-medium-r-normal--17-*-*-*-p-*-iso10646-1,\
++                                          -*-r-*-iso10646-1,*"
++}
++class "GtkWidget" style "gtk-default"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.az_AZ.utf8.orig gtk+-1.2.10/gtk/gtkrc.az_AZ.utf8
+--- gtk+-1.2.10/gtk/gtkrc.az_AZ.utf8.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.az_AZ.utf8	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,8 @@
++style "gtk-default" {
++       fontset = "-*-bpg glaho international-medium-r-normal--12-*-*-*-p-*-iso10646-1,\
++       	 -urw-nimbus sans l-medium-r-normal--12-*-*-*-p-*-iso10646-1,\
++       		 -*-clearlyu-medium-r-normal--17-*-*-*-p-*-iso10646-1,\
++                                          -*-r-*-iso10646-1,*"
++}
++class "GtkWidget" style "gtk-default"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.az.orig gtk+-1.2.10/gtk/gtkrc.az
+--- gtk+-1.2.10/gtk/gtkrc.az.orig	2000-12-12 18:53:25.000000000 +0200
++++ gtk+-1.2.10/gtk/gtkrc.az	2009-07-12 20:35:40.000000000 +0300
+@@ -2,7 +2,9 @@ style "gtk-default-az" {
+        fontset = "-*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
+                   -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
+ 		  -*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-9e,\
+-		  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-9e,*-r-*"
++		  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-9e,\
++         -*-bpg glaho international-medium-r-normal--12-*-*-*-p-*-iso10646-1,\
++         -urw-nimbus sans l-medium-r-normal--12-*-*-*-p-*-iso10646-1,\
+ 		  -*-helvetica-medium-r-normal--12-*-*-*-*-*-iso10646-1,\
+ 		  -*-arial-medium-r-normal--12-*-*-*-*-*-iso10646-1,*-r-*"
+ }
+diff -p -up gtk+-1.2.10/gtk/gtkrc.el_GR.utf8.orig gtk+-1.2.10/gtk/gtkrc.el_GR.utf8
+--- gtk+-1.2.10/gtk/gtkrc.el_GR.utf8.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.el_GR.utf8	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,8 @@
++style "gtk-default" {
++       fontset = "-*-bpg glaho international-medium-r-normal--14-*-*-*-p-*-iso10646-1,\
++       		-*-kerkis-medium-r-normal--14-*-*-*-p-*-iso10646-1,\
++                  -*-clearlyu-medium-r-normal--17-*-*-*-p-*-iso10646-1,\
++                                          -*-r-*-iso10646-1,*"
++}
++class "GtkWidget" style "gtk-default"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.el.orig gtk+-1.2.10/gtk/gtkrc.el
+--- gtk+-1.2.10/gtk/gtkrc.el.orig	2000-05-08 21:49:18.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.el	2009-07-12 20:35:40.000000000 +0300
+@@ -1,8 +0,0 @@
+-style "gtk-default-el" {
+-       fontset = "-*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
+-		  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
+-		  -*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-7,\
+-		  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-7,*-r-*"
+-}
+-class "GtkWidget" style "gtk-default-el"
+-
+diff -p -up gtk+-1.2.10/gtk/gtkrc.eo.orig gtk+-1.2.10/gtk/gtkrc.eo
+--- gtk+-1.2.10/gtk/gtkrc.eo.orig	2000-05-08 21:49:18.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.eo	2009-07-12 20:35:40.000000000 +0300
+@@ -1,8 +0,0 @@
+-style "gtk-default-eo" {
+-       fontset = "-*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
+-                  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
+-		  -*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-3,\
+-		  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-3,*-r-*"
+-}
+-class "GtkWidget" style "gtk-default-eo"
+-
+diff -p -up gtk+-1.2.10/gtk/gtkrc.hy_AM.utf8.orig gtk+-1.2.10/gtk/gtkrc.hy_AM.utf8
+--- gtk+-1.2.10/gtk/gtkrc.hy_AM.utf8.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.hy_AM.utf8	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,7 @@
++style "gtk-default" {
++       fontset = "-*-armnet helvetica-medium-r-normal--14-*-*-*-p-*-iso10646-1,\
++       		-*-artsounk-medium-r-normal--14-*-*-*-p-*-iso10646-1,\
++                                          -*-r-*-iso10646-1,*"
++}
++class "GtkWidget" style "gtk-default"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.iso-8859-3.orig gtk+-1.2.10/gtk/gtkrc.iso-8859-3
+--- gtk+-1.2.10/gtk/gtkrc.iso-8859-3.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.iso-8859-3	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,10 @@
++style "gtk-default-eo" {
++       fontset = "-*-bpg glaho international-medium-r-normal--12-*-*-*-p-*-iso8859-1,\
++       		   -*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
++                  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
++         -*-bpg glaho international-medium-r-normal--12-*-*-*-p-*-iso8859-3,\
++		  -*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-3,\
++		  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-3,*-r-*"
++}
++class "GtkWidget" style "gtk-default-eo"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.iso-8859-7.orig gtk+-1.2.10/gtk/gtkrc.iso-8859-7
+--- gtk+-1.2.10/gtk/gtkrc.iso-8859-7.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.iso-8859-7	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,9 @@
++style "gtk-default-el" {
++       fontset = "-*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
++		  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
++         -*-bpg glaho international-medium-r-normal--12-*-*-*-p-*-iso8859-7,\
++		  -*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-7,\
++		  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-7,*-r-*"
++}
++class "GtkWidget" style "gtk-default-el"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.iso-8859-9.orig gtk+-1.2.10/gtk/gtkrc.iso-8859-9
+--- gtk+-1.2.10/gtk/gtkrc.iso-8859-9.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.iso-8859-9	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,8 @@
++style "gtk-default-tr" {
++       fontset = "-*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
++                  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
++		  -*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-9,\
++		  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-9,*-r-*"
++}
++class "GtkWidget" style "gtk-default-tr"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.ja_JP.utf8.orig gtk+-1.2.10/gtk/gtkrc.ja_JP.utf8
+--- gtk+-1.2.10/gtk/gtkrc.ja_JP.utf8.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.ja_JP.utf8	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,8 @@
++style "gtk-default" {
++       fontset = "-*-sazanami mincho-medium-r-normal--14-*-*-*-p-*-iso10646-1,\
++        -*-kochi mincho-medium-r-normal--14-*-*-*-p-*-iso10646-1,\
++        -*-clearlyu-medium-r-normal--17-*-*-*-p-*-iso10646-1,\
++                                          -*-r-*-iso10646-1,*"
++}
++class "GtkWidget" style "gtk-default"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.ja.orig gtk+-1.2.10/gtk/gtkrc.ja
+--- gtk+-1.2.10/gtk/gtkrc.ja.orig	2000-05-08 21:49:18.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.ja	2009-07-12 20:35:40.000000000 +0300
+@@ -1,5 +1,5 @@
+ style "gtk-default-ja" {
+-       fontset = "-adobe-helvetica-medium-r-normal--14-100-100-100-p-76-iso8859-1,\
++       fontset = "-adobe-helvetica-medium-r-normal--12-*-*-*-*-*-*-*,\
+ 		  -ricoh-ms mincho-medium-r-normal--14-*-*-*-*-*-jisx0208.1983-0,\
+                   -misc-fixed-medium-r-normal--14-*-*-*-*-*-jisx0208.1983-0,\
+ 		  *-r-*"
+diff -p -up gtk+-1.2.10/gtk/gtkrc.ka_GE.utf8.orig gtk+-1.2.10/gtk/gtkrc.ka_GE.utf8
+--- gtk+-1.2.10/gtk/gtkrc.ka_GE.utf8.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.ka_GE.utf8	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,7 @@
++style "gtk-default" {
++       fontset = "-*-bpg glaho international-medium-r-normal--12-*-*-*-p-*-iso10646-1,\
++       		-*-clearlyu-medium-r-normal--17-*-*-*-p-*-iso10646-1,\
++                                          -*-r-*-iso10646-1,*"
++}
++class "GtkWidget" style "gtk-default"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.ko_KR.utf8.orig gtk+-1.2.10/gtk/gtkrc.ko_KR.utf8
+--- gtk+-1.2.10/gtk/gtkrc.ko_KR.utf8.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.ko_KR.utf8	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,7 @@
++style "gtk-default" {
++       fontset = "-*-baekmuk gulim-medium-r-normal--16-*-*-*-p-*-iso10646-1,\
++        -*-clearlyu-medium-r-normal--17-*-*-*-p-*-iso10646-1,\
++                                          -*-r-*-iso10646-1,*"
++}
++class "GtkWidget" style "gtk-default"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.ko.orig gtk+-1.2.10/gtk/gtkrc.ko
+--- gtk+-1.2.10/gtk/gtkrc.ko.orig	1999-10-19 14:39:25.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.ko	2009-07-12 20:35:40.000000000 +0300
+@@ -1,8 +1,8 @@
+ style "gtk-default-ko" {
+-       fontset = "-adobe-helvetica-medium-r-normal--*-120-*-*-*-*-*-*,\
+-                  -*-gulim-medium-r-normal--*-120-*-*-*-*-ksc5601.1987-0,\
+-                  -*-kodig-medium-r-normal--*-120-*-*-*-*-ksc5601.1987-0,\
+-                  -*-*-medium-r-normal--*-120-*-*-*-*-ksc5601.1987-0,*"
++       fontset = "-adobe-helvetica-medium-r-normal--12-*-*-*-*-*-*-*,\
++                  -*-gulim-medium-r-normal--*-140-*-*-*-*-ksc5601.1987-0,\
++                  -*-kodig-medium-r-normal--*-140-*-*-*-*-ksc5601.1987-0,\
++                  -*-*-medium-r-normal--*-140-*-*-*-*-ksc5601.1987-0,*"
+ }
+ class "GtkWidget" style "gtk-default-ko"
+ 
+diff -p -up gtk+-1.2.10/gtk/gtkrc.ru.orig gtk+-1.2.10/gtk/gtkrc.ru
+--- gtk+-1.2.10/gtk/gtkrc.ru.orig	2000-05-08 21:49:18.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.ru	2009-07-12 20:35:40.000000000 +0300
+@@ -1,8 +1,9 @@
+ style "gtk-default-ru" {
+-       fontset = "-adobe-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-*,\
+-                  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
+-                  -cronyx-helvetica-medium-r-normal--12-*-*-*-*-*-koi8-r,\
+-                  -*-arial-medium-r-normal--12-*-*-*-*-*-koi8-r,*-r-*"
++       fontset = "-*-arial-medium-r-normal--14-*-*-*-*-*-iso8859-1,\
++	   			  -adobe-helvetica-medium-r-normal--14-*-*-*-*-*-iso8859-*,\
++                  -*-arial-medium-r-normal--14-*-*-*-*-*-koi8-r,\
++                  -cronyx-helvetica-medium-r-normal--14-*-*-*-*-*-koi8-r,\
++				  *-r-*"
+ }
+ class "GtkWidget" style "gtk-default-ru"
+ 
+diff -p -up gtk+-1.2.10/gtk/gtkrc.tg_TJ.utf8.orig gtk+-1.2.10/gtk/gtkrc.tg_TJ.utf8
+--- gtk+-1.2.10/gtk/gtkrc.tg_TJ.utf8.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.tg_TJ.utf8	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,9 @@
++style "gtk-default" {
++       fontset = "-*-bpg glaho international-medium-r-normal--14-*-*-*-p-*-iso10646-1,\
++       		-*-bookman-light-r-normal--14-*-*-*-p-*-iso10646-1,\
++       	     -*-urw bookman l-medium-r-normal--14-*-*-*-p-*-iso10646-1,\
++                  -*-clearlyu-medium-r-normal--17-*-*-*-p-*-iso10646-1,\
++                                          -*-r-*-iso10646-1,*"
++}
++class "GtkWidget" style "gtk-default"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.th.orig gtk+-1.2.10/gtk/gtkrc.th
+--- gtk+-1.2.10/gtk/gtkrc.th.orig	2000-05-08 21:49:18.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.th	2009-07-12 20:35:40.000000000 +0300
+@@ -7,9 +7,9 @@
+ #
+ 
+ style "gtk-default-th" {
+-       fontset = "-*-helvetica-medium-r-normal--14-*-*-*-*-*-iso8859-1,\
+-		  -*-phaisarn-medium-r-normal--14-*-*-*-*-*-tis620.2533-1,\
+-		  -*-*-medium-r-normal--14-*-*-*-*-*-tis620.2533-1,*-r-*"
++       fontset = "-*-helvetica-medium-r-normal--16-*-*-*-*-*-iso8859-1,\
++		  -*-norasi-medium-r-normal--18-*-*-*-*-*-tis620-0,\
++		  -*-*-medium-r-normal--16-*-*-*-*-*-tis620-0,*-r-*"
+ }
+ class "GtkWidget" style "gtk-default-th"
+ 
+diff -p -up gtk+-1.2.10/gtk/gtkrc.th_TH.utf8.orig gtk+-1.2.10/gtk/gtkrc.th_TH.utf8
+--- gtk+-1.2.10/gtk/gtkrc.th_TH.utf8.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.th_TH.utf8	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,15 @@
++# $(gtkconfigdir)/gtkrc.th
++#
++# This file defines the fontsets for Thai language (th) using
++# the UTF-8 charset encoding.
++#
++# 2004, Pablo Saratxaga <pablo@mandrakesoft.com>
++#
++
++style "gtk-default-th" {
++       fontset = "-*-norasi-medium-r-normal--18-*-*-*-*-*-iso10646-1,\
++       		-*-clearlyu-medium-r-normal--17-*-*-*-p-*-iso10646-1,\
++                                          -*-r-*-iso10646-1,*"
++}
++class "GtkWidget" style "gtk-default-th"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.tr.orig gtk+-1.2.10/gtk/gtkrc.tr
+--- gtk+-1.2.10/gtk/gtkrc.tr.orig	2000-05-08 21:49:18.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.tr	2009-07-12 20:35:40.000000000 +0300
+@@ -1,8 +0,0 @@
+-style "gtk-default-tr" {
+-       fontset = "-*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
+-                  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-1,\
+-		  -*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-9,\
+-		  -*-arial-medium-r-normal--12-*-*-*-*-*-iso8859-9,*-r-*"
+-}
+-class "GtkWidget" style "gtk-default-tr"
+-
+diff -p -up gtk+-1.2.10/gtk/gtkrc.utf-8.orig gtk+-1.2.10/gtk/gtkrc.utf-8
+--- gtk+-1.2.10/gtk/gtkrc.utf-8.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.utf-8	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,8 @@
++style "gtk-default" {
++       fontset = "-*-bpg glaho international-medium-r-normal--14-*-*-*-p-*-iso10646-1,\
++       		-*-nimbus sans l-medium-r-normal--14-*-*-*-p-*-iso10646-1,\
++                -*-clearlyu-medium-r-normal--17-*-*-*-p-*-iso10646-1,\
++                                          -*-r-*-iso10646-1,*"
++}
++class "GtkWidget" style "gtk-default"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.vi_VN.utf8.orig gtk+-1.2.10/gtk/gtkrc.vi_VN.utf8
+--- gtk+-1.2.10/gtk/gtkrc.vi_VN.utf8.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.vi_VN.utf8	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,8 @@
++style "gtk-default" {
++       fontset = "-*-bpg glaho international-medium-r-normal--14-*-*-*-p-*-iso10646-1,\
++       	-urw-nimbus sans l-medium-r-normal--14-*-*-*-p-*-iso10646-1,\
++       		-*-clearlyu-medium-r-normal--17-*-*-*-p-*-iso10646-1,\
++                                          -*-r-*-iso10646-1,*"
++}
++class "GtkWidget" style "gtk-default"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.zh_CN.orig gtk+-1.2.10/gtk/gtkrc.zh_CN
+--- gtk+-1.2.10/gtk/gtkrc.zh_CN.orig	2000-05-08 21:49:18.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.zh_CN	2009-07-12 20:35:40.000000000 +0300
+@@ -7,7 +7,7 @@
+ #
+ 
+ style "gtk-default-zh-cn" {
+-       fontset = "-adobe-helvetica-medium-r-normal--16-*-*-*-*-*-iso8859-1,\
++       fontset = "-adobe-helvetica-medium-r-normal--12-*-*-*-*-*-*-*,\
+ 		  -*-*-medium-r-normal--16-*-*-*-*-*-gb2312.1980-0,*-r-*"
+ }
+ class "GtkWidget" style "gtk-default-zh-cn"
+diff -p -up gtk+-1.2.10/gtk/gtkrc.zh_CN.utf8.orig gtk+-1.2.10/gtk/gtkrc.zh_CN.utf8
+--- gtk+-1.2.10/gtk/gtkrc.zh_CN.utf8.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.zh_CN.utf8	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,7 @@
++style "gtk-default" {
++       fontset ="-*-AR PL SungtiL GB-medium-r-normal--16-*-*-*-p-*-iso10646-1,\
++        -*-clearlyu-medium-r-normal--17-*-*-*-p-*-iso10646-1,\
++                                          -*-r-*-iso10646-1,*"
++}
++class "GtkWidget" style "gtk-default"
++
+diff -p -up gtk+-1.2.10/gtk/gtkrc.zh_TW.big5.orig gtk+-1.2.10/gtk/gtkrc.zh_TW.big5
+--- gtk+-1.2.10/gtk/gtkrc.zh_TW.big5.orig	2000-11-04 00:40:27.000000000 +0200
++++ gtk+-1.2.10/gtk/gtkrc.zh_TW.big5	2009-07-12 20:35:40.000000000 +0300
+@@ -10,8 +10,8 @@
+ # the lowercasing of "big5" is done on purpose, if you change it it won't work
+ 
+ style "gtk-default-zh-tw" {
+-	fontset = "-adobe-helvetica-medium-r-normal--16-*-*-*-*-*-iso8859-1,\
+-		  -taipei-*-medium-r-normal--*-*-*-*-*-*-big5-0,\
++	fontset = "-adobe-helvetica-medium-r-normal--12-*-*-*-*-*-*-*,\
++		  -taipei-*-medium-r-normal--16-*-*-*-*-*-big5-0,\
+ 		  -*-*-medium-r-normal--16-*-*-*-*-*-big5-0,*-r-*"
+ }
+ class "GtkWidget" style "gtk-default-zh-tw"
+diff -p -up gtk+-1.2.10/gtk/gtkrc.zh_TW.utf8.orig gtk+-1.2.10/gtk/gtkrc.zh_TW.utf8
+--- gtk+-1.2.10/gtk/gtkrc.zh_TW.utf8.orig	2009-07-12 20:35:40.000000000 +0300
++++ gtk+-1.2.10/gtk/gtkrc.zh_TW.utf8	2009-07-12 20:35:40.000000000 +0300
+@@ -0,0 +1,7 @@
++style "gtk-default" {
++       fontset = "-*-AR PL Mingti2L Big5-medium-r-normal--16-*-*-*-p-*-iso10646-1,\
++        -*-clearlyu-medium-r-normal--17-*-*-*-p-*-iso10646-1,\
++                                          -*-r-*-iso10646-1,*"
++}
++class "GtkWidget" style "gtk-default"
++
+diff -p -up gtk+-1.2.10/gtk/Makefile.am.orig gtk+-1.2.10/gtk/Makefile.am
+--- gtk+-1.2.10/gtk/Makefile.am.orig	2001-02-02 19:09:02.000000000 +0200
++++ gtk+-1.2.10/gtk/Makefile.am	2009-07-12 20:35:40.000000000 +0300
+@@ -374,11 +374,16 @@ $(srcdir)/gtktypebuiltins_evals.c: @REBU
+ 
+ 
+ gtkconfdir = $(sysconfdir)/gtk
+-gtkconf_DATA = gtkrc.az gtkrc.el gtkrc.eo gtkrc.he gtkrc.hy gtkrc.ja \
+-	gtkrc.ko gtkrc.ru gtkrc.tr gtkrc.th gtkrc.uk gtkrc.iso-8859-2 \
+-	gtkrc.iso-8859-5 gtkrc.iso-8859-13 gtkrc.iso-8859-14 \
++gtkconf_DATA = gtkrc.az gtkrc.he gtkrc.hy gtkrc.ja \
++	gtkrc.ko gtkrc.ru gtkrc.th gtkrc.th_TH.utf8 gtkrc.uk \
++	gtkrc.utf-8 gtkrc.iso-8859-2 \
++	gtkrc.iso-8859-3 gtkrc.iso-8859-5 gtkrc.iso-8859-7 \
++	gtkrc.iso-8859-9 gtkrc.iso-8859-13 gtkrc.iso-8859-14 \
+ 	gtkrc.iso-8859-15 gtkrc.zh_CN gtkrc.zh_TW.big5 \
+ 	gtkrc.ka_GE.georgianacademy gtkrc.ka_GE.georgianps \
++	gtkrc.az_AZ.utf8 gtkrc.ja_JP.utf8 gtkrc.ko_KR.utf8 gtkrc.hy_AM.utf8 \
++	gtkrc.tg_TJ.utf8 gtkrc.zh_CN.utf8 gtkrc.zh_TW.utf8 gtkrc.ka_GE.utf8 \
++	gtkrc.el_GR.utf8 gtkrc.am_ET.utf8 gtkrc.vi_VN.utf8 \
+ 	gtkrc.vi_VN.tcvn gtkrc.vi_VN.viscii gtkrc.cp1251 gtkrc.cp1255
+ 
+ # We create a dummy theme for the default GTK+ theme
+@@ -409,9 +414,13 @@ install-data-local:
+ 	ln -s gtkrc.iso-8859-14 gtkrc.cy ; \
+ 	ln -s gtkrc.iso-8859-14 gtkrc.ga ; \
+ 	ln -s gtkrc.iso-8859-15 gtkrc.et ; \
+-	ln -s gtkrc.ka_GE.georgianps gtkrc.ka ; \
++	ln -s gtkrc.ka_GE.utf8 gtkrc.ka ; \
+ 	ln -s gtkrc.vi_VN.viscii gtkrc.vi_VN.viscii111 ; \
+-	ln -s gtkrc.vi_VN.tcvn gtkrc.vi ; \
++	ln -s gtkrc.vi_VN.utf8 gtkrc.vi ; \
++	ln -s gtkrc.zh_CN gtkrc.zh_SG ; \
++	ln -s gtkrc.zh_CN.utf8 gtkrc.zh_SG.utf8 ; \
++	ln -s gtkrc.zh_TW.big5 gtkrc.zh_HK ; \
++	ln -s gtkrc.zh_TW.utf8 gtkrc.zh_TW.utf8 ; \
+ 	ln -s gtkrc.cp1251 gtkrc.be ; \
+ 	ln -s gtkrc.cp1251 gtkrc.bg
+ 
+diff -p -up gtk+-1.2.10/gtk/Makefile.in.orig gtk+-1.2.10/gtk/Makefile.in
+--- gtk+-1.2.10/gtk/Makefile.in.orig	2001-04-02 06:14:13.000000000 +0300
++++ gtk+-1.2.10/gtk/Makefile.in	2009-07-12 20:35:40.000000000 +0300
+@@ -191,8 +191,7 @@ gen_sources = xgen-gdef xgen-gtbh xgen-g
+ CLEANFILES =  $(gen_sources)
+ 
+ gtkconfdir = $(sysconfdir)/gtk
+-gtkconf_DATA = gtkrc.az gtkrc.el gtkrc.eo gtkrc.he gtkrc.hy gtkrc.ja 	gtkrc.ko gtkrc.ru gtkrc.tr gtkrc.th gtkrc.uk gtkrc.iso-8859-2 	gtkrc.iso-8859-5 gtkrc.iso-8859-13 gtkrc.iso-8859-14 	gtkrc.iso-8859-15 gtkrc.zh_CN gtkrc.zh_TW.big5 	gtkrc.ka_GE.georgianacademy gtkrc.ka_GE.georgianps 	gtkrc.vi_VN.tcvn gtkrc.vi_VN.viscii gtkrc.cp1251 gtkrc.cp1255
+-
++gtkconf_DATA = gtkrc.az gtkrc.he gtkrc.hy gtkrc.ja 	gtkrc.ko gtkrc.ru gtkrc.th gtkrc.th_TH.utf8 gtkrc.uk gtkrc.iso-8859-2 	gtkrc.iso-8859-5 gtkrc.iso-8859-13 gtkrc.iso-8859-14 	gtkrc.iso-8859-15 gtkrc.zh_CN gtkrc.zh_TW.big5 	gtkrc.ka_GE.georgianacademy gtkrc.ka_GE.georgianps 	gtkrc.vi_VN.utf8 gtkrc.vi_VN.tcvn gtkrc.vi_VN.viscii gtkrc.cp1251 gtkrc.cp1255 gtkrc.utf-8 gtkrc.iso-8859-3 gtkrc.iso-8859-7 gtkrc.iso-8859-9 gtkrc.az_AZ.utf8 gtkrc.ja_JP.utf8 gtkrc.ko_KR.utf8 gtkrc.tg_TJ.utf8 gtkrc.zh_CN.utf8 gtkrc.zh_TW.utf8 gtkrc.ka_GE.utf8 gtkrc.hy_AM.utf8 gtkrc.el_GR.utf8 gtkrc.am_ET.utf8 
+ 
+ #
+ # test programs, not to be installed
+@@ -1505,9 +1504,13 @@ install-data-local:
+ 	ln -s gtkrc.iso-8859-14 gtkrc.cy ; \
+ 	ln -s gtkrc.iso-8859-14 gtkrc.ga ; \
+ 	ln -s gtkrc.iso-8859-15 gtkrc.et ; \
+-	ln -s gtkrc.ka_GE.georgianps gtkrc.ka ; \
++	ln -s gtkrc.ka_GE.utf8 gtkrc.ka ; \
+ 	ln -s gtkrc.vi_VN.viscii gtkrc.vi_VN.viscii111 ; \
+-	ln -s gtkrc.vi_VN.tcvn gtkrc.vi ; \
++	ln -s gtkrc.vi_VN.utf8 gtkrc.vi ; \
++	ln -s gtkrc.zh_CN gtkrc.zh_SG ; \
++	ln -s gtkrc.zh_CN.utf8 gtkrc.zh_SG.utf8 ; \
++	ln -s gtkrc.zh_TW.big5 gtkrc.zh_HK ; \
++	ln -s gtkrc.zh_TW.utf8 gtkrc.zh_TW.utf8 ; \
+ 	ln -s gtkrc.cp1251 gtkrc.be ; \
+ 	ln -s gtkrc.cp1251 gtkrc.bg
+ 

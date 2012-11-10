@@ -1,0 +1,11 @@
+--- gtk+-1.2.10/gdk/gdk.c.argb	2006-07-25 18:30:47.000000000 +0200
++++ gtk+-1.2.10/gdk/gdk.c	2006-07-25 18:32:24.000000000 +0200
+@@ -408,6 +408,8 @@
+     }
+   
+   GDK_NOTE (MISC, g_message ("progname: \"%s\"", g_get_prgname ()));
++
++  putenv("XLIB_SKIP_ARGB_VISUALS=1");
+   
+   gdk_display = XOpenDisplay (gdk_display_name);
+   if (!gdk_display)

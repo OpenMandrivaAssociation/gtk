@@ -1,0 +1,11 @@
+--- gtk+-1.2.10/gtk/gtklabel.c.labelvariable	Mon Apr  2 05:12:38 2001
++++ gtk+-1.2.10/gtk/gtklabel.c	Wed Feb 13 17:57:15 2002
+@@ -1004,7 +1004,7 @@
+   *r = 0;
+ 
+   result_str = gdk_wcstombs (string_wc);
+-  if (string)
++  if (result_str)
+     {
+       gtk_label_set_text_internal (label, result_str, string_wc);
+       gtk_label_set_pattern (label, pattern);
