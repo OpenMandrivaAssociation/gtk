@@ -159,7 +159,7 @@ autoreconf-2.13
 %build
 %define Werror_cflags %nil
 %configure  --with-xinput=xfree --with-native-locale
-%make LIBTOOL=%{_bindir}/libtool
+%make LIBTOOL="%{_bindir}/libtool --tag=CC"
 
 make check
 
