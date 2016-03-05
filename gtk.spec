@@ -3,11 +3,12 @@
 %define libgtk	%mklibname gtk %{api} %{major}
 %define libgdk	%mklibname gdk %{api} %{major}
 %define devname	%mklibname %{name} -d
+%define _disable_lto 1
 
 Summary:	The GIMP ToolKit (GTK+), a library for creating GUIs for X
 Name:		gtk+
 Version:	1.2.10
-Release:	58
+Release:	59
 License:	LGPLv2
 Group:		System/Libraries
 Url:		http://www.gtk.org
@@ -147,6 +148,7 @@ autoreconf-2.13
 %configure \
 	--with-xinput=xfree \
 	--with-native-locale
+
 %make LIBTOOL="%{_bindir}/libtool --tag=CC"
 
 %check
@@ -185,4 +187,3 @@ EOF
 %{_mandir}/man1/*
 %{_infodir}/g?k.info*
 %{_includedir}/*
-
