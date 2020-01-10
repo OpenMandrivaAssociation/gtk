@@ -133,7 +133,7 @@ GTK+ 2.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 # vi.po is not encoded in utf-8
 bzcat %{SOURCE1} > po/vi.po
