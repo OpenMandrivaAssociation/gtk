@@ -11,7 +11,7 @@ Version:	1.2.10
 Release:	59
 License:	LGPLv2
 Group:		System/Libraries
-Url:		http://www.gtk.org
+Url:		https://www.gtk.org
 Source0:	http://download.gimp.org/pub/gtk/v1.2/%{name}-%{version}.tar.gz
 Source1:	gtk+-1.2.10-vi.po.bz2
 # (fc) 1.2.10-2mdk ximian patch changing drawing when no shadow is set for menubar
