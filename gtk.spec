@@ -68,6 +68,8 @@ Patch28:	gtk+-1.2.10-argb.patch
 # (from fedora)
 Patch29:	gtk+-1.2.10-gtkgdkdep.patch
 
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	autoconf2.1
 BuildRequires:	automake1.4
 BuildRequires:	libtool
